@@ -1,58 +1,199 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8">
-    <title>about</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"  />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,700" rel="stylesheet">
+    <title></title>
 
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link href="css/full-width-pics.css" rel="stylesheet">
 
-    <script src="js/jquery-3.1.1.min.js"></script>
-    <script src="js/main.js"></script>
+    <style>
+
+    @media only screen and (min-width:900px){
+      #dd{
+        margin: 5px 0 0;
+      }
+    }
+    #nav-font{
+      font-family: "Merriweather", "Oswald","Lato","Helvetica Nueue", Helvetica;
+      /*letter-spacing: 1px;*/
+      font-weight: normal;
+      font-size: 16px;
+    }
+    #logo {
+      /*height: 50px;*/
+      display: block;
+      float: right;
+      font-size: larger;
+      height: 50px;
+      /*margin: 5px 10px 0 0;*/
+      margin-right: -10px;
+      position: relative;
+      text-align: left;
+      width: 100px;
+    }
+    #logo img{
+      width: 100px;
+      margin-top: 2px;
+      margin-left: -15px;
+    }
+    @media only screen and (min-width : 900px){
+      #logo{
+        float: left;
+        margin: 5px 0 0 10px;
+        width: 200px;
+      }
+
+      #logo img{
+        width: 200px;
+        /*margin-top:1px;*/
+      }
+    }
+
+    .photo {
+			background-attachment: fixed;
+			background-position: 50% 0;
+			background-repeat: no-repeat;
+			height: 450px;
+			position: relative;
+		}
+		.photo span {
+			bottom: 0;
+			color: white;
+			display: block;
+			left: 50%;
+			margin-left: -640px;
+			font-size: 28px;
+			padding: 10px;
+			position: absolute;
+			text-shadow: 0 2px 0 black, 0 0 10px black;
+/*			width: 1280px;*/
+		}
+		.summer {
+			background-image: url(/imgs/IMG_2032.JPG);
+		}
+		.autumn {
+			background-image: url(/imgs/IMG_1972.JPG);
+		}
+		.winter {
+			background-image: url(../imgs/IMAG7447_1_1.jpg);
+		}
+		.spring {
+			background-image: url(images/spring.jpg);
+		}
+    </style>
+
+
+	<script src="js/stellar.js"></script>
 
   </head>
   <body>
-    <div id="header" class="headerLarge">
-      <div id="logo">
-        <img src="imgs/logo1.png"  />
-        <br>
-      </div>
-      <div id="menu">
-        <ul>
-          <li class="neutralMenuSelected">
-            <a href="index.html">About</a>
-          </li>
-          <li class="consultingMenu">
-            <a href="programmes.html">Programmes</a>
-            <div class="subMenu">
-              <ul>
-                <li>
-                  <a class="areaLink" href="#">part1</a>
-                  <a class="areaLink" href="#">part2</a>
-                  <a class="areaLink" href="#">part3</a>
-                </li>
-              </ul>
+    
+      <nav id="" class="navbar navbar-default navbar-fixed-top animated bounce" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div id="logo">
+                  <a href="#"><img src="imgs/12823448_236157283395833_2041136407980453675_o.jpg"  /></a>
+                  <br>
+                </div>
             </div>
-          </li>
-          <li class="staffingMenu">
-            <a href="careers.html">Carrers</a>
-          </li>
-          <li class="trainingMenu">
-            <a href="reach.html">Reach Us</a>
-          </li>
-        </ul>
-      </div>
-    </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul id="nav-font" class="nav navbar-nav">
+                     <li>
+                        <a href="#">Home</a>
+                    </li>									
+										<li>
+                        <a href="#">About</a>
+                    </li>
+                    <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Programmes <span class="caret"></span></a>
+                  <ul id="dd" class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                  </ul>
+                </li>
+
+                    <li>
+                        <a href="#">Careers</a>
+                    </li>
+                    <li>
+                        <a href="#">Reach Us</a>
+                    </li>
+
+                </ul>
 
 
-    <div id="page">
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
 
-      <div id="main">
+    <div class="container">
+		<div class="photo autumn" data-stellar-background-ratio="0.5"><span>UNECA AU FORUM</span></div>
+	</div>
 
-      </div>
+    <section>
+        <div class="container">
+            <div class="row">
+							<div class="col-md-2"></div>
 
-    </div>
+							<div class="col-md-8">
+								<h1 class="section-heading">Mission</h1>
+								<p style="color:red; font-size:34px; font-family:'Oswald'; margin-top: 0;
+margin-bottom: 1rem;">to be the foremost development based pan african organisation tha applies a sociale entrepreneurial</p>
 
 
+
+								<p style="color:red; font-size:34px; font-family:'Oswald'; margin-top: 0;
+margin-bottom: 1rem;">approach to profer innovative solutions to african challneges with the youth as equal partners</p>
+							</div>
+
+							<div class="col-md-2"></div>
+            </div>
+        </div>
+    </section>
+		
+		<div class="container">
+		<div class="photo summer" data-stellar-background-ratio="0.5"><span>SUPPORT THE GLOBAL FUND</span></div>
+	</div>
+		
+		<section>
+        <div class="container">
+            <div class="row">
+							<div class="col-md-2"></div>
+
+							<div class="col-md-8">
+								<h1 class="section-heading">Vision</h1>
+								<p style="color:red; font-size:34px; font-family:'Oswald'; margin-top: 0;
+margin-bottom: 1rem;">to the single repository of evidence based </p>
+
+
+
+								<p style="color:red; font-size:34px; font-family:'Oswald'; margin-top: 0;
+margin-bottom: 1rem;">technical assistant delivery and project management to achieve sustainable development</p>
+							</div>
+
+							<div class="col-md-2"></div>
+            </div>
+        </div>
+    </section>
+
+      <script src="js/jquery-3.1.1.min.js" ></script>
+      <script src="js/bootstrap.min.js" ></script>
   </body>
 </html>
