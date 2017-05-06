@@ -56,3 +56,17 @@ footer {
         font-size: 2em;
     }
 }
+
+@media(max-width:768px) {
+    section {
+        padding-top: 1px;
+        padding-bottom: 25px;
+				margin-top: -30px;
+    }
+
+    .section-heading {
+				font-family: "Merriweather","Open sans","Helvetica Nueue", Helvetica, sans-serif;
+        font-size: 2em;
+				margin-bottom: 10px;
+    }
+}

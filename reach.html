@@ -1,47 +1,220 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8">
-    <title>about</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"  />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,700" rel="stylesheet">
+    <title></title>
 
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link href="css/full-width-pics.css" rel="stylesheet">
 
-    <script src="js/jquery-3.1.1.min.js"></script>
-    <script src="js/main.js"></script>
+    <style>
+
+    @media only screen and (min-width:900px){
+      #dd{
+        margin: 5px 0 0;
+      }
+    }
+    #nav-font{
+      font-family: "Merriweather", "Oswald","Lato","Helvetica Nueue", Helvetica;
+      /*letter-spacing: 1px;*/
+      font-weight: normal;
+      font-size: 16px;
+			
+    }
+			#nav-font li a{
+				color: rgb(0, 116, 158);
+			}
+			#nav-font li a:hover{
+				border-bottom: 3px solid rgb(28, 134, 185);
+				color: #000;
+			}
+    #logo {
+      /*height: 50px;*/
+      display: block;
+      float: right;
+      font-size: larger;
+      height: 50px;
+      /*margin: 5px 10px 0 0;*/
+      margin-right: -10px;
+      position: relative;
+      text-align: left;
+      width: 100px;
+    }
+    #logo img{
+      width: 100px;
+      margin-top: 2px;
+      margin-left: -15px;
+    }
+    @media only screen and (min-width : 900px){
+      #logo{
+        float: left;
+        margin: 5px 0 0 10px;
+        width: 200px;
+      }
+
+      #logo img{
+        width: 200px;
+        /*margin-top:1px;*/
+      }
+    }
+
+    .photo {
+			background-attachment: fixed;
+			background-position: 50% 0;
+			background-repeat: no-repeat;
+			height: 450px;
+			position: relative;
+		}
+		.photo span {
+			bottom: 0;
+			color: white;
+			display: block;
+			left: 50%;
+			margin-left: -640px;
+			font-size: 28px;
+			padding: 10px;
+			position: absolute;
+			text-shadow: 0 2px 0 black, 0 0 10px black;
+/*			width: 1280px;*/
+		}
+			
+/*
+		@media only screen and (max-width: 415px){
+				.photo{
+					background-attachment: fixed;
+					background-position: 50% 0%;
+					background-size: contain;
+					background-repeat: no-repeat;
+					height: 450px;
+					position: relative;
+					margin-top: -20px;
+				}
+			}
+			
+		@media only screen and (max-width: 415px){
+				.photo span {
+					bottom: 0;
+					color: #fff;
+					display: block;
+					left: 50%!important;
+					margin-left: -90px!important;
+					font-size: 14px;
+					padding: 10px;
+					position: absolute;
+					margin-left: -130px!important;
+					text-shadow: 0 2px 0 black, 0 0 10px black;
+				}
+			}
+			
+			@media only screen and (max-width: 415px){
+				.section-heading{
+					
+				}
+			}
+			
+			@media only screen and (max-width: 415px){
+				p {
+					font-family: "Merriweather","Open sans","Helvetica Nueue", Helvetica, sans-serif!important;
+					font-size: 16px!important;
+				}
+			}
+			
+		@media only screen and (max-width: 400px){
+				.photo span {
+					bottom: 0;
+					color: white;
+					display: block;
+					left: 50%;
+					margin-left: 40px;
+					font-size: 8px;
+					padding: 10px;
+					position: absolute;
+					text-shadow: 0 2px 0 black, 0 0 10px black;
+				}
+			}
+*/
+			
+		.summer {
+			background-image: url(imgs/IMG_2032.JPG);
+		}
+		.autumn {
+			background-image: url(imgs/IMG_1972.JPG);
+		}
+		.winter {
+			background-image: url(../imgs/IMAG7447_1_1.jpg);
+		}
+		.spring {
+			background-image: url(images/spring.jpg);
+		}
+			
+			
+    </style>
+
+
+	<script src="js/stellar.js"></script>
+
   </head>
   <body>
-    <div id="header" class="headerLarge">
-      <div id="logo">
-        <img src="imgs/logo1.png"  />
-        <br>
-      </div>
-      <div id="menu">
-        <ul>
-          <li class="neutralMenuSelected">
-            <a href="index.html">About</a>
-          </li>
-          <li class="consultingMenu">
-            <a href="programmes.html">Programmes</a>
-            <div class="subMenu">
-              <ul>
-                <li>
-                  <a class="areaLink" href="#">part1</a>
-                  <a class="areaLink" href="#">part2</a>
-                  <a class="areaLink" href="#">part3</a>
-                </li>
-              </ul>
+    
+      <nav id="" class="navbar navbar-default navbar-fixed-top animated bounce" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div id="logo">
+                  <a href="index.html"><img src="imgs/12823448_236157283395833_2041136407980453675_o.jpg"  /></a>
+                  <br>
+                </div>
             </div>
-          </li>
-          <li class="staffingMenu">
-            <a href="careers.html">Carrers</a>
-          </li>
-          <li class="trainingMenu">
-            <a href="reach.html">Reach Us</a>
-          </li>
-        </ul>
-      </div>
-    </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul id="nav-font" class="nav navbar-nav">
+                     <li>
+                        <a href="index.html">Home</a>
+                    </li>									
+										<li>
+                        <a href="about.html">About</a>
+                    </li>
+									
+										<li>
+                        <a href="programmes.html">Work</a>
+                    </li>
+<!--
+                    <li class="dropdown">
+                  <a href="programmes.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Programmes <span class="caret"></span></a>
+                  <ul id="dd" class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                  </ul>
+                </li>
+-->
+
+                    <li>
+                        <a href="careers.html">Careers</a>
+                    </li>
+                    <li>
+                        <a href="reach.html">Reach Us</a>
+                    </li>
+
+                </ul>
+
+
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
 
 
     <div id="page">

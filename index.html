@@ -25,7 +25,15 @@
       /*letter-spacing: 1px;*/
       font-weight: normal;
       font-size: 16px;
+			
     }
+			#nav-font li a{
+				color: rgb(0, 116, 158);
+			}
+			#nav-font li a:hover{
+				border-bottom: 3px solid rgb(28, 134, 185);
+				color: #000;
+			}
     #logo {
       /*height: 50px;*/
       display: block;
@@ -75,11 +83,86 @@
 			text-shadow: 0 2px 0 black, 0 0 10px black;
 /*			width: 1280px;*/
 		}
+			@media only screen and (max-width: 415px){
+				.col-md-2{
+					margin-bottom: ;
+				}
+			}
+			
+			@media only screen and (max-width: 415px){
+				.col-md-2 img{
+					height: 150px;
+					padding: 32px;
+				}
+			}
+			
+			@media only screen and (max-width: 415px){
+				.resp{
+					width: 90%;
+				}
+			}
+			
+/*
+		@media only screen and (max-width: 415px){
+				.photo{
+					background-attachment: fixed;
+					background-position: 50% 0%;
+					background-size: contain;
+					background-repeat: no-repeat;
+					height: 450px;
+					position: relative;
+					margin-top: -20px;
+				}
+			}
+			
+		@media only screen and (max-width: 415px){
+				.photo span {
+					bottom: 0;
+					color: #fff;
+					display: block;
+					left: 50%!important;
+					margin-left: -90px!important;
+					font-size: 14px;
+					padding: 10px;
+					position: absolute;
+					margin-left: -130px!important;
+					text-shadow: 0 2px 0 black, 0 0 10px black;
+				}
+			}
+			
+			@media only screen and (max-width: 415px){
+				.section-heading{
+					
+				}
+			}
+			
+			@media only screen and (max-width: 415px){
+				p {
+					font-family: "Merriweather","Open sans","Helvetica Nueue", Helvetica, sans-serif!important;
+					font-size: 16px!important;
+				}
+			}
+			
+		@media only screen and (max-width: 400px){
+				.photo span {
+					bottom: 0;
+					color: white;
+					display: block;
+					left: 50%;
+					margin-left: 40px;
+					font-size: 8px;
+					padding: 10px;
+					position: absolute;
+					text-shadow: 0 2px 0 black, 0 0 10px black;
+				}
+			}
+*/
+			
 		.summer {
-			background-image: url(/imgs/IMG_2032.JPG);
+			background-image: url(imgs/IMG_2032.JPG);
 		}
 		.autumn {
-			background-image: url(/imgs/IMG_1972.JPG);
+			background-image: url(imgs/IMG_1972.JPG);
 		}
 		.winter {
 			background-image: url(../imgs/IMAG7447_1_1.jpg);
@@ -87,6 +170,8 @@
 		.spring {
 			background-image: url(images/spring.jpg);
 		}
+			
+			
     </style>
 
 
@@ -106,7 +191,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <div id="logo">
-                  <a href="#"><img src="imgs/12823448_236157283395833_2041136407980453675_o.jpg"  /></a>
+                  <a href="index.html"><img src="imgs/12823448_236157283395833_2041136407980453675_o.jpg"  /></a>
                   <br>
                 </div>
             </div>
@@ -114,24 +199,30 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul id="nav-font" class="nav navbar-nav">
                      <li>
-                        <a href="#">Home</a>
+                        <a href="index.html">Home</a>
                     </li>									
 										<li>
-                        <a href="#">About</a>
+                        <a href="about.html">About</a>
                     </li>
+									
+										<li>
+                        <a href="programmes.html">Work</a>
+                    </li>
+<!--
                     <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Programmes <span class="caret"></span></a>
+                  <a href="programmes.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Programmes <span class="caret"></span></a>
                   <ul id="dd" class="dropdown-menu">
                     <li><a href="#">Action</a></li>
                     <li><a href="#">Another action</a></li>
                   </ul>
                 </li>
+-->
 
                     <li>
-                        <a href="#">Careers</a>
+                        <a href="careers.html">Careers</a>
                     </li>
                     <li>
-                        <a href="#">Reach Us</a>
+                        <a href="reach.html">Reach Us</a>
                     </li>
 
                 </ul>
@@ -144,23 +235,16 @@
     </nav>
 
     <div class="container">
-		<div class="photo autumn" data-stellar-background-ratio="0.5"><span>UNECA AU FORUM</span></div>
+		<div class="photo autumn" style="margin-top: 6px;!important;" data-stellar-background-ratio="0.5"><span></span></div>
 	</div>
-
-    <section>
+		<section>
         <div class="container">
             <div class="row">
 							<div class="col-md-2"></div>
 
 							<div class="col-md-8">
-								<h1 class="section-heading">Mission</h1>
-								<p style="color:red; font-size:34px; font-family:'Oswald'; margin-top: 0;
-margin-bottom: 1rem;">to be the foremost development based pan african organisation tha applies a sociale entrepreneurial</p>
-
-
-
-								<p style="color:red; font-size:34px; font-family:'Oswald'; margin-top: 0;
-margin-bottom: 1rem;">approach to profer innovative solutions to african challneges with the youth as equal partners</p>
+								<h1 class="section-heading lead text-center">Pan African Center for Social Development and Accountability</h1>
+								<p class="lead text-center">Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. </p>
 							</div>
 
 							<div class="col-md-2"></div>
@@ -168,9 +252,25 @@ margin-bottom: 1rem;">approach to profer innovative solutions to african challne
         </div>
     </section>
 		
-		<div class="container">
-		<div class="photo summer" data-stellar-background-ratio="0.5"><span>SUPPORT THE GLOBAL FUND</span></div>
-	</div>
+		<div class="container text-center">
+      <div class="row">
+        <div class="col-lg-4">
+          <h2>Pan African</h2>
+          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+          
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <h2>Social Development</h2>
+          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+          
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <h2>Accountability</h2>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+		</div>
 		
 		<section>
         <div class="container">
@@ -178,20 +278,22 @@ margin-bottom: 1rem;">approach to profer innovative solutions to african challne
 							<div class="col-md-2"></div>
 
 							<div class="col-md-8">
-								<h1 class="section-heading">Vision</h1>
-								<p style="color:red; font-size:34px; font-family:'Oswald'; margin-top: 0;
-margin-bottom: 1rem;">to the single repository of evidence based </p>
-
-
-
-								<p style="color:red; font-size:34px; font-family:'Oswald'; margin-top: 0;
-margin-bottom: 1rem;">technical assistant delivery and project management to achieve sustainable development</p>
+								<h1 class="section-heading lead text-center">Vision</h1>
+								<p class="lead text-center">The vision of PACSDA also known as the African Youth Observatory is to be a continental repository for information and intelligence on youth and as a reference for decision making by policy makers and capacity building in support of evidence based policy making and programing in Africa. </p>
 							</div>
 
 							<div class="col-md-2"></div>
             </div>
         </div>
-    </section>
+    </section>	
+		
+		
+		
+		<div class="footer">
+			<div class="container">
+				<h3>We are footer</h3>
+			</div>
+		</div>
 
       <script src="js/jquery-3.1.1.min.js" ></script>
       <script src="js/bootstrap.min.js" ></script>
